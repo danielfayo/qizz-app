@@ -8,7 +8,7 @@ export default function QuestionPage(props) {
     const [isSubmited, setIsSubmited] = useState(false)
 
     useEffect(()=>{
-        fetch('https://opentdb.com/api.php?amount=5')
+        fetch('https://opentdb.com/api.php?amount=10')
             .then(res => res.json())
             .then(data => {
                 const question = data.results.map(result => {
